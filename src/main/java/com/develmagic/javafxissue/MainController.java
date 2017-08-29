@@ -20,7 +20,8 @@ public class MainController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        assert(logBox == null);
+        if (logBox == null)
+            throw new RuntimeException("JavaFX autowiring not successful");
     }
 
 }
