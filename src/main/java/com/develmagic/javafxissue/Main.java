@@ -8,6 +8,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -23,6 +24,8 @@ public class Main extends Application {
     private Stage stage;
     private Parent root;
 
+    @Autowired
+    private DownloadController downloadController;
 
     @Override
     public void init() throws Exception {
