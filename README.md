@@ -1,4 +1,4 @@
-The problem is that if aspect are used and `spring.aop.proxy-target-class=true` is set, than JavaFX components are not
+The problem is that if aspects are used and `spring.aop.proxy-target-class=true` is set, than JavaFX components are not
 autowired in controllers (logBox == null). 
 
 If `spring.aop.proxy-target-class=false` then: 
